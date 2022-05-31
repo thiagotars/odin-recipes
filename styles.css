@@ -1,0 +1,116 @@
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cover-img {
+
+   width: 800px;
+   margin-bottom: 5px ;
+}
+
+.recipe-img {
+     
+   height: 600px;
+   margin-left: 20px;
+   display: inline;
+   
+}
+
+.description {
+
+   font-size: 16px;
+   text-align: left;
+}
+
+.header {
+
+   background-color:black;
+   border-radius: 5px;
+   max-width: 800px;
+   margin-bottom: 40px;
+   padding: 5px 20px ;
+   display: flex;
+   box-sizing: border-box;
+   color: #fff;
+   font-size: 16px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   
+   /* make the header responsive with flexbox and separated the two items inside the container with space-between */
+   /* also prevent help from crashing with flex-wrap on */
+}
+
+h1 {
+
+   font-size: 16px;
+   max-width: 100px;
+}
+
+h2 {
+
+   font-size: 20px;
+   
+}
+
+.recipe-container {
+   display: flex;
+   flex: 1;
+   gap: 20px;
+   max-width: 800px;
+   align-items:stretch;
+}
+.main-description {
+   display: inline-block;
+   border: 1px solid green;
+   flex: 1px;
+}
+
+.by {
+
+   font-size: 14px;
+   align-self: flex-end;
+   margin-left: 20px;
+   margin-right: 10px;
+   font-weight: 700;
+  
+   
+}
+
+.container {
+   display: flex;
+   /* display them side to side */
+   gap: 10px;
+   /* add space between the elements */
+   max-width: 800px;
+   /* set maximum width */
+   flex-wrap: wrap;
+   /* allows items to wrap to avoid collapse */
+   margin-top: 10px;
+ 
+}
+
+.item {
+   border:1px solid black;
+   border-radius: 5px;
+   text-align: center;
+   /* center text inside the container */
+   padding: 15px;
+   /* grow the button around its content */
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: 16px;
+   flex: 1 0 130px;
+   /* make it stop shrinking once it reach 130px */
+}
+
+.item:hover {
+   background-color: black;
+   color: #fff;
+   transition: .2s;
+   /* controls hover state */
+}
+
+
+
